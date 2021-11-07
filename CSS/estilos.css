@@ -155,8 +155,10 @@ article h1{
 	margin: 20px;
 }
 
-article p img{
-	
+article p{
+	margin:5px 20px;
+	font-size: 14px;
+	text-align: justify;
 }
 
 aside#der {
@@ -172,5 +174,8 @@ footer {
   margin: 20px auto;
   width: 1000px;
   height: 70px;
-  background: #888;
+  background: rgba(100, 0, 255,1);
+  text-align: center;
+  line-height: 70px;
+  color: white;
 }
