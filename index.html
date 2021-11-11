@@ -13,6 +13,7 @@
     <title>WEB HISTORIA DEL PERÚ 3</title>
   </head>
   <body>
+    <div id="chat">Chat</div>
     <!-- Inicio de la cabecera -->
     <header>
       <div id="logo">HISTORIA</div>
@@ -31,10 +32,10 @@
     <!-- Inicio de la barra de navegación -->
     <nav>
       <ul>
-        <li class="botones">Botón 1</li>
-        <li class="botones">Botón 2</li>
-        <li class="botones">Botón 3</li>
-        <li class="botones">Botón 4</li>
+        <a href="#"><li class="botones">Botón 1</li></a>
+        <a href="#"><li class="botones">Botón 2</li></a>
+        <a href="#"><li class="botones">Botón 3</li></a>
+        <a href="#"><li class="botones">Botón 4</li></a>
       </ul>
     </nav>
 
@@ -75,7 +76,15 @@
     <!-- Inicio de sección -->
 
     <section>
-      <aside id="izq"></aside>
+      <aside id="izq">
+        <ul>  
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </aside>
+
       <article>
         <h2>GUERRA POR EL GUANO Y EL SALITRE</h2>
         <img
@@ -97,7 +106,15 @@
           guerra en favor de su aliado.
         </p>
       </article>
-      <aside id="der"></aside>
+      <aside id="der">
+      <h1>INGRESO</h1>
+      <form>
+        <input type="text" placeholder="Usuario"> 
+        <input type="password" placeholder="Contraseña" required> 
+        <input type="email" placeholder="Email" required> 
+        <input type="submit" value="Enviar">
+      </form>
+      </aside>
     </section>
     <!-- Cierre de sección -->
 

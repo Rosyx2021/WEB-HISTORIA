@@ -5,6 +5,23 @@
   font-family: sans-serif;
 }
 
+#chat{
+	position: fixed;
+	width: 250px;
+	height: 40px;
+	bottom: 0;
+	right: 20px;
+	background: magenta;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-family: "Kaushan Script", cursive;
+	font-size: 35px;
+	border-radius: 20px 20px 0 0;
+	cursor: pointer;
+}
+
 header {
   position: relative;
   margin: 20px auto;
@@ -39,18 +56,21 @@ header {
   color: #3b5998;
   font-size: 20px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 .instagran {
   color: #d6249f;
   font-size: 20px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 .twitter {
   color: #00acee;
   font-size: 20px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
 li {
@@ -60,6 +80,7 @@ li {
 #icono1 {
   top: 42px;
   right: 120px;
+
 }
 
 #icono2 {
@@ -91,6 +112,13 @@ nav {
   line-height: 48px;
 }
 
+a .botones:hover{
+	background: rgba(100, 0, 255,.4);
+}
+
+a .botones:active{
+	background: rgba(255, 0, 100,1);
+}
 #top {
   position: relative;
   margin: 20px auto;
@@ -138,15 +166,40 @@ aside#izq {
   top: 0;
   width: 200px;
   height: 453px;
-  background: #333;
+}
+
+aside#izq ul li{
+	background: #aaa;
+	padding: 10px;
+	margin: 2px 10px;
+	list-style: square;
+	list-style-position: inside;
+}
+
+aside#izq ul li a{
+	text-decoration: none;
 }
 
 article {
   position: absolute;
+  margin: 5px 10px;
   left: 200px;
   top: 0;
   width: 600px;
   height: 453px;
+}
+
+article img{
+	float: left;
+	margin-right: 20px;
+}
+
+article p{
+	margin:20px;
+}
+
+article p img{
+	float: left;
 }
 
 article h1{
@@ -155,11 +208,7 @@ article h1{
 	margin: 20px;
 }
 
-article p{
-	margin:5px 20px;
-	font-size: 14px;
-	text-align: justify;
-}
+
 
 aside#der {
   position: absolute;
@@ -167,9 +216,51 @@ aside#der {
   top: 0;
   width: 200px;
   height: 453px;
-  background: #333;
 }
-footer {
+
+aside#der h1{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(100, 0, 255, 1);
+	color: white;
+	margin-bottom: 5px;
+}
+
+aside#der input{
+	padding: 10px;
+	margin: 5px 0;
+	width: 176px;
+}
+
+aside#der input[type="text"]{
+	background: url(https://cdn.icon-icons.com/icons2/602/PNG/128/Gender_Neutral_User_icon-icons.com_55902.png);
+	background-repeat:no-repeat ;
+	background-position: right;
+	background-size: contain;
+}
+
+aside#der input[type="password"]{
+	background: url(https://img1.freepng.es/20180218/jgq/kisspng-password-computer-security-scalable-vector-graphic-unlocked-lock-cliparts-5a89c26ac29879.2081123815189776427971.jpg);
+	background-repeat:no-repeat ;
+	background-position: right;
+	background-size: contain;
+}
+
+aside#der input[type="email"]{
+	background: url(https://img1.freepng.es/20180414/sxq/kisspng-email-message-telephone-text-messaging-email-icon-5ad18303711d16.2234617015236800034633.jpg);
+	background-repeat:no-repeat ;
+	background-position: right;
+	background-size: contain;
+}
+
+aside#der input[type="submit"]{
+	width: 200px;
+	background: rgba(100, 0, 100, .5);
+	border: 0;
+}
+footer { 
   position: relative;
   margin: 20px auto;
   width: 1000px;
