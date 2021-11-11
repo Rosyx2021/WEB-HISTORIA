@@ -258,8 +258,8 @@ aside#der input[type="email"]{
 aside#der input[type="submit"]{
 	width: 200px;
 	background: rgba(100, 0, 100, .5);
-	border: 0;
 	cursor: pointer;
+	border: 0;
 
 }
 footer { 
